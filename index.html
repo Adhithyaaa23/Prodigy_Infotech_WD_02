@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="stopwatch-container">
+        <div class="glass-panel">
+            <h1 class="app-title">STOPWATCH</h1>
+
+            <div class="time-display-wrapper">
+                <div class="time-display" id="display">
+                    <span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span><span
+                        class="dot">.</span><span id="milliseconds">00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" id="lapBtn" disabled>Lap</button>
+                <button class="btn btn-primary" id="startPauseBtn">Start</button>
+                <button class="btn btn-danger" id="resetBtn">Reset</button>
+            </div>
+
+            <div class="laps-container">
+                <div class="laps-header">
+                    <span>Lap</span>
+                    <span>Lap Time</span>
+                    <span>Total Time</span>
+                </div>
+                <ul class="laps-list" id="lapsList"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
